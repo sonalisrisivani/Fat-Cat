@@ -8,19 +8,21 @@ Current sprint: [001 — Foundation](docs/sprints/001-foundation.md)
 - Product and architecture baseline captured from the planning conversation.
 - Agent workflow, source boundaries, tracking, and Git conventions written.
 - Placeholder source/assets/test directories created.
+- DEV-001: scaffold validated and committed in `369f2a4`; foundation sprint complete.
 
 ## In progress
-- DEV-001: validate scaffold and create initial local commits.
+- None. Ready for the next user-scoped implementation task.
 
 ## Pending
 - DEV-002: build/tooling setup, after implementation authorization.
 - CAT-001 onward: character prototype and extension features (see tracking).
 
 ## Next action
-Finish scaffold validation and Git checkpoint. Then obtain implementation scope from the user before starting DEV-002 or character development.
+When implementation is authorized, scope DEV-002 and CAT-001 into Sprint 002; first validate the minimal build/test setup, then prototype three cat poses. Read the architecture and PRD only for those items.
 
 ## Blockers and verification
 - No technical blocker known; no remote configured.
 - No runnable code exists, so build, unit, and browser tests are not applicable.
-- Structural/documentation checks pending.
+- Passed: all 10 Markdown files' relative links, final newlines, STATUS length, source placeholders, ignore rules, and staged whitespace checks.
+- Working tree verified clean after foundation commit; this handoff update is recorded in the following documentation commit. No incomplete implementation work.
 - No independent review yet.

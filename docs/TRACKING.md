@@ -6,7 +6,7 @@ Agent key: A1 = Codex / GPT-6 (exact variant unavailable). U = user. `—` = non
 
 | ID | Item | State | Proposed | Implemented | Reviewed | Modified | Commits |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| DEV-001 | Development workspace | active | U + A1 | A1 | A1 self-review pending | — | pending initial commit |
+| DEV-001 | Development workspace | done | U + A1 | A1 | A1 self-review; no independent review | A1 (verified handoff) | `369f2a4`; handoff commit discoverable by Feature trailer |
 | DEV-002 | Build and test toolchain | planned | A1 | — | — | — | — |
 | CAT-001 | Character feasibility prototype | planned | U + A1 | — | — | — | — |
 | EXT-001 | Permissions and injection lifecycle | planned | A1 | — | — | — | — |

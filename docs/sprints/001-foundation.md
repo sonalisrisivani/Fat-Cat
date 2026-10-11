@@ -7,7 +7,7 @@ Scope: DEV-001 only. Extension behavior and build tooling are excluded.
 - [x] Source, asset, test, documentation, and scratch boundaries established.
 - [x] Product baseline, architecture, roadmap and feature IDs recorded.
 - [x] Agent, Git, attribution, and handoff rules established.
-- [ ] Relative links, placeholders, ignores and whitespace validated.
-- [ ] Local Git history created and clean state verified.
+- [x] Relative links, placeholders, ignores and whitespace validated.
+- [x] Local Git history created and clean state verified (`369f2a4`).
 
 Handoff: follow STATUS. Next sprint is selected only after implementation authorization.
