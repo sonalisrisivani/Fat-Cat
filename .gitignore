@@ -1,0 +1,25 @@
+# Local agent notes and editor state
+/scratch/
+/.idea/
+/.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Dependencies and generated output
+node_modules/
+/dist/
+/build/
+/coverage/
+/playwright-report/
+/test-results/
+*.tsbuildinfo
+*.log
+*.crx
+*.zip
+*.pem
+
+# Local secrets (safe examples may be committed)
+.env
+.env.*
+!.env.example
