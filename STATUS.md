@@ -1,28 +1,32 @@
 # Project status
 
-Updated: 2026-10-11
-Phase: workspace setup; extension implementation not started.
-Current sprint: [001 — Foundation](docs/sprints/001-foundation.md)
+Updated: 2026-10-23
+Phase: core companion implemented; lean beta verification.
+Current sprint: [005 — Lean beta polish](docs/sprints/005-lean-beta-polish.md)
 
-## Completed
-- Product and architecture baseline captured from the planning conversation.
-- Agent workflow, source boundaries, tracking, and Git conventions written.
-- Placeholder source/assets/test directories created.
-- DEV-001: scaffold validated and committed in `369f2a4`; foundation sprint complete.
+## Implemented
+- Original Marmalade SVG/JSON character with quiet automatic sleep/idle/stretch and click-to-pet.
+- Site permission/registration lifecycle, saved drag/keyboard position, site hiding, reduced-motion/inactivity cleanup.
+- UX-002: discreet mouse-hover/keyboard-focus hide badge, hidden during pointer petting; touch target retained. User confirms working.
+- UX-003: one Show cat / Hide cat button for the current website. No pause/trial/preview UI. First Show requests site permission; Show/Hide remembered across visits.
+- Legacy global pause: Show overrides only that selected site, without resuming other sites. Existing stored position retained.
 
 ## In progress
-- None. Ready for the next user-scoped implementation task.
-
-## Pending
-- DEV-002: build/tooling setup, after implementation authorization.
-- CAT-001 onward: character prototype and extension features (see tracking).
+- REL-001: user authorized clean commits and first push to sonalisrisivani/Fat-Cat. Preserve foundation history; commit extension checkpoint, then consolidate standalone studio.
 
 ## Next action
-When implementation is authorized, scope DEV-002 and CAT-001 into Sprint 002; first validate the minimal build/test setup, then prototype three cat poses. Read the architecture and PRD only for those items.
+Reload Fat Cat in chrome://extensions, refresh a regular webpage, then open the popup. Verify the single Show/Hide action, first-time permission prompt, refresh persistence, and ×/Escape then Show. Next: reliability/accessibility and CPU/heap profiling before beta packaging.
 
-## Blockers and verification
-- No technical blocker known; no remote configured.
-- No runnable code exists, so build, unit, and browser tests are not applicable.
-- Passed: all 10 Markdown files' relative links, final newlines, STATUS length, source placeholders, ignore rules, and staged whitespace checks.
-- Working tree verified clean after foundation commit; this handoff update is recorded in the following documentation commit. No incomplete implementation work.
-- No independent review yet.
+## Validation
+- `npm run check`: strict typecheck/build and 25 tests pass.
+- Popup tests: permission denial, saved visibility, legacy pause recovery, blocked pages/settings failure, injection failure.
+- Worker tests: show requires permission and popup origin, selected-site pause override survives restart and preserves position; other paused sites remain paused.
+- Browser fixture using built popup with mocked Chrome APIs: appearance and Show→Hide→Show verified. Actual Chrome prompt and multi-tab acceptance still pending.
+- Built `dist/`: 60,252 bytes unpacked; no new permissions or runtime packages.
+- CPU/heap/battery and real device touch/forced-colors remain unmeasured. No independent review.
+
+## Handoff
+- User confirmed integrated character, automatic behavior and hide fix work in Chrome before this popup change.
+- Implementation checkpoint authorized for commit and GitHub push on 2026-10-23; generated dist remains ignored.
+- Changed for UX-003: popup HTML/CSS/controller, settings message/schema, worker show handling, popup/worker tests, and affected docs.
+- Agent: A1 (Codex / GPT-6; exact variant unavailable). No delegation or remote.

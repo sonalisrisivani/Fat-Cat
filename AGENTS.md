@@ -7,7 +7,7 @@
 4. Check the feature/bug row in `docs/TRACKING.md`. Do not reread all docs by default.
 
 ## Current boundary
-This is a documentation and directory scaffold. Do not implement extension features until the user authorizes implementation. No build toolchain or runnable extension exists yet.
+Implementation was authorized on 2026-10-11. Follow the current sprint in STATUS.md; the current scope is a lean beta: subtle behavior, essential polish, verification, and beta preparation. Follow the PRD deferrals; do not expand into reminders or personalization without a new scope decision.
 
 ## Product and engineering rules
 - Keep the companion quiet, local-first, accessible, and easy to hide.

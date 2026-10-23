@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" fill="none">
+  <title>Marmalade, an extremely round orange cat</title>
+  <g stroke="#79462f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse data-part="shadow" cx="175" cy="267" rx="112" ry="12" fill="#633d29" opacity=".1" stroke="none"/>
+    <g data-part="cat">
+      <g data-part="tail">
+        <path d="M252 225C313 242 340 206 319 174C309 158 292 170 300 185C315 212 283 214 263 201" fill="#eda04e"/>
+        <path d="M310 196l18 2M303 210l12 13" stroke="#c97637" stroke-width="9"/>
+      </g>
+      <g data-part="backFoot"><path d="M214 239q-8 31 14 32h15q17-3 8-20l-8-16" fill="#e99643"/><path d="M229 263v6m9-6v6" stroke-width="2"/></g>
+      <g data-part="frontFoot"><path d="M104 237q-12 32 10 34h18q17-4 5-23l-6-14" fill="#f4ad59"/><path d="M116 263v6m9-6v6" stroke-width="2"/></g>
+      <g data-part="body">
+        <path d="M177 83C106 79 66 124 65 194C64 246 107 262 178 262C246 262 285 242 282 190C279 128 242 86 177 83Z" fill="#f2a34d"/>
+        <path d="M87 167q17 3 20 18m-28 2q17 0 22 12m153-45q-17 7-19 20m31-2q-17 7-19 19" stroke="#cf7b36" stroke-width="10"/>
+        <path d="M174 165C122 165 102 190 108 220C113 248 145 254 178 254C222 254 246 242 244 218C242 189 216 167 174 165Z" fill="#ffdb99" stroke="none"/>
+        <path d="M174 239q4 4 8 0" stroke="#d39454" stroke-width="2.5"/>
+        <g data-part="leftArm"><path d="M103 182q-14 37 6 43q16 4 18-17" fill="#f5ac57"/><path d="M105 216l-1 5m8-3v5" stroke-width="2"/></g>
+        <g data-part="rightArm"><path d="M247 180q16 35-4 42q-16 5-19-14" fill="#f5ac57"/><path d="M246 214l1 5m-8-2v5" stroke-width="2"/></g>
+      </g>
+      <g data-part="head">
+        <path d="M103 99Q83 43 104 39Q126 38 145 72M214 71Q240 36 253 43Q264 51 247 103" fill="#f2a34d"/>
+        <path d="M105 80l-5-26q16 2 26 23m103 0 17-22-3 29" fill="#e9927b" stroke="none"/>
+        <path d="M176 65C139 62 113 74 101 100L87 108L96 115L81 126L96 131C97 162 131 181 176 181C223 181 254 164 256 135L270 127L256 119L265 110L250 102C238 77 210 65 176 65Z" fill="#f8b45e"/>
+        <path d="M159 68l4 17m14-19v17m17-15-4 17" stroke="#cf7b36" stroke-width="7"/>
+        <path d="M115 139q24-8 45 6q14-6 29 0q24-15 48-6q-6 31-61 31q-48 0-61-31" fill="#ffdfaa" stroke="none"/>
+        <ellipse cx="117" cy="138" rx="12" ry="6" fill="#e99a78" stroke="none"/>
+        <ellipse cx="235" cy="138" rx="12" ry="6" fill="#e99a78" stroke="none"/>
+        <g data-part="eyes">
+          <path d="M129 118Q137 120 145 117L145 122C143 132 130 132 129 122Z" fill="#563829" stroke="none"/>
+          <path d="M208 115Q216 117 224 113L224 121C222 131 209 131 208 121Z" fill="#563829" stroke="none"/>
+          <path d="M127 117q10 4 20-1m59-2q10 4 20-2" stroke-width="2.5"/>
+          <path d="M130 105q8 2 14 0m63-3q9-6 17-2" stroke-width="2.5"/>
+          <circle cx="140" cy="122" r="1.7" fill="#fff3d9" stroke="none"/>
+          <circle cx="219" cy="119" r="1.7" fill="#fff3d9" stroke="none"/>
+        </g>
+        <g data-part="closedEyes" opacity="0"><path d="M129 122q8 6 16 0m63 0q8 6 16 0"/></g>
+        <path d="M169 137q7-4 14 0l-7 6Z" fill="#ad6552" stroke="#ad6552" stroke-width="2"/>
+        <path d="M176 143v5q-7 5-13 0m13 0q12 9 22-6" stroke-width="2.5"/>
+        <path d="M102 139l-21-3m23 11-20 5m164-13 21-3m-23 11 20 5" stroke-width="2"/>
+      </g>
+    </g>
+    <g data-part="wool" opacity="0">
+      <path d="M302 265q34 8 31-8t-19 1" stroke="#839986" stroke-width="2"/>
+      <circle cx="294" cy="244" r="23" fill="#acc2a6" stroke="#637e68" stroke-width="2.5"/>
+      <path d="M277 230q25 4 34 24m-38-14q22 1 31 22m-19-39q-6 19 18 40m-10-42q-4 19 21 29m-40 1q14-7 29-5" stroke="#728e75" stroke-width="2"/>
+    </g>
+    <g data-part="heart" opacity="0" stroke="none" fill="#cc735c"><path d="M266 59C242 44 254 28 266 40C279 27 291 44 266 59Z"/><path d="M292 81C276 70 285 60 292 68C301 59 309 70 292 81Z" opacity=".6"/></g>
+    <g data-part="sleep" opacity="0" stroke="#a2886e" stroke-width="3"><path d="M271 82h12l-12 13h12m6-40h16l-16 18h16"/></g>
+  </g>
+</svg>
