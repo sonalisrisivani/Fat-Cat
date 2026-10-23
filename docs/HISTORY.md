@@ -2,6 +2,10 @@
 
 Newest first. One short entry per meaningful change; archive old entries only when scanning becomes slow. Do not copy status snapshots or diffs here.
 
+## 2026-10-23 — CAT-001 / REL-001 — Consolidated standalone studio
+- A1 preserved the standalone studio from the character worktree in the primary repository. It uses the same artwork/parser/renderer as the extension; builds to ignored build/preview so extension packaging stays unchanged.
+- Preserved studio controls and seven renderer/schema regressions alongside 25 extension checks. No runtime dependencies, history rewriting, or generated artifacts added. Release profiling/Chrome acceptance remain open.
+
 ## 2026-10-23 — REL-001 — Source publication checkpoint
 - User authorized committing and pushing the current project to sonalisrisivani/Fat-Cat. A1 preserves foundation history and checkpoints the integrated extension before adding the standalone studio. No history rewriting or generated output. Release profiling and Chrome acceptance limitations remain explicit.
 

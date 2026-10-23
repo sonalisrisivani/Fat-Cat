@@ -9,8 +9,9 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test tests/*.test.ts",
-    "check": "npm run typecheck && npm run build && npm test"
+    "test": "node scripts/build-preview.mjs && node --experimental-strip-types --test tests/*.test.ts tests/*.test.mjs",
+    "check": "npm run typecheck && npm run build && npm test",
+    "preview": "node scripts/build-preview.mjs && node scripts/serve-preview.mjs"
   },
   "devDependencies": {
     "@types/chrome": "0.3.5",

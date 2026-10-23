@@ -36,9 +36,13 @@ Marmalade handles sleep, idle, blinking and occasional stretching automatically.
 
 No new permissions or runtime dependencies. Local settings only; no page text collection, telemetry or backend. Chrome pages, Web Store pages, files and incognito are unsupported.
 
-`npm run check` passes strict typecheck, build and 25 tests. Tests cover Show/Hide persistence, direct permission requests and denial, legacy pause recovery without resuming other sites, injection failures, restricted pages, worker restarts, animation scheduling and existing overlay controls. Chrome APIs are mocked; a browser fixture checked the simplified popup's appearance and both button states. Live Chrome permission/persistence testing and CPU/heap profiling remain pending.
+`npm run check` passes strict typecheck, build and 32 tests. Tests cover Show/Hide persistence, direct permission requests and denial, legacy pause recovery without resuming other sites, injection failures, restricted pages, worker restarts, animation scheduling and existing overlay controls. Chrome APIs are mocked; a browser fixture checked the simplified popup's appearance and both button states. Live Chrome permission/persistence testing and CPU/heap profiling remain pending.
 
 After reloading, manually confirm Show, permission denial/approval, refresh persistence, Hide across tabs, and ×/Escape followed by Show. The generated `dist/` is the folder Chrome loads.
+
+## Standalone character studio
+
+Run `npm run preview` and open [the local studio](http://127.0.0.1:4186). It includes all six motions, click-to-pet, pause/hide, reduced motion and size testing. Set `CAT_PREVIEW_PORT` to use another port if one is occupied. The studio shares the extension’s artwork and renderer; its output is kept in ignored `build/preview/` and is not shipped in the extension. See [design and format notes](docs/CHARACTER-STUDIO.md).
 
 ## Resume
 Read [AGENTS.md](AGENTS.md), then [STATUS.md](STATUS.md). Inspect Git status before editing.
