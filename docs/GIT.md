@@ -1,6 +1,6 @@
 # Git workflow
 
-Local repository, default branch `main`. No remote or publication is implied. Use existing Git author settings; never invent the user's identity or change global configuration. Agent attribution belongs in trailers and TRACKING, not a fabricated author address.
+Default branch `main`. User authorized the initial source push to `https://github.com/sonalisrisivani/Fat-Cat` on 2026-10-23. Chrome Web Store publication remains a separate release step. Use existing Git author settings; never invent the user's identity or change global configuration. Agent attribution belongs in trailers and TRACKING, not a fabricated author address.
 
 ## Commits
 Conventional format: `type(scope): imperative summary`.

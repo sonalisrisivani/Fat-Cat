@@ -1,0 +1,46 @@
+:host { all: initial; }
+.companion {
+  position: fixed; width: 104px; height: 112px; box-sizing: border-box;
+  pointer-events: none; font: 12px/1.4 system-ui, sans-serif; color: #42372f;
+}
+.cat, .hide { pointer-events: auto; box-sizing: border-box; font: inherit; cursor: pointer; }
+.cat {
+  position: absolute; bottom: 0; left: 8px; width: 88px; height: 80px;
+  border: 0; padding: 0; background: transparent; border-radius: 20px;
+  touch-action: none; user-select: none; cursor: grab;
+}
+.cat:active { cursor: grabbing; }
+.cat svg { display: block; width: 88px; height: 80px; pointer-events: none; transform-origin: center bottom; }
+.hide {
+  /* Large hit area, small visible badge. It overlaps the cat's hit area slightly
+     so the pointer can reach it without crossing an unhoverable gap. */
+  position: absolute; right: 0; top: 0; width: 44px; height: 44px;
+  display: grid; place-items: center; isolation: isolate;
+  border: 0; border-radius: 50%; background: transparent;
+  color: #655341; font-size: 17px; line-height: 1; padding: 0;
+  transition: opacity 120ms ease;
+}
+.hide::before {
+  content: ''; position: absolute; inset: 10px; z-index: -1;
+  border: 1px solid #c9baa3; border-radius: 50%; background: #fbf7ef;
+}
+.hide:hover::before, .hide:focus-visible::before { background: #eee3d2; }
+/* Opacity keeps the button in keyboard order; no invisible pointer hitbox. */
+@media (hover: hover) and (pointer: fine) {
+  .hide { opacity: 0; pointer-events: none; }
+  .companion:not([data-pose="pet"]):hover .hide,
+  .cat:focus-visible ~ .hide, .hide:focus-visible {
+    opacity: 1; pointer-events: auto;
+  }
+}
+/* Touch and hybrid devices keep an explicit, tappable escape route. */
+@media (any-pointer: coarse) {
+  .hide { opacity: 1; pointer-events: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .hide { transition: none; } }
+button:focus-visible { outline: 3px solid #a95735; outline-offset: 2px; }
+.companion[data-inactive="true"] { visibility: hidden; }
+@media (forced-colors: active) {
+  .hide { opacity: 1; pointer-events: auto; color: ButtonText; }
+  .hide::before { border-color: ButtonText; background: ButtonFace; }
+}
