@@ -1,0 +1,28 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #49372e;
+  background: #faf6ef;
+}
+* { box-sizing: border-box; }
+body { width: 340px; margin: 0; }
+main { padding: 28px 24px 20px; text-align: center; }
+.eyebrow { margin: 0 0 10px; color: #756154; font-size: 10px; letter-spacing: 0.18em; font-weight: 700; }
+h1 { margin: 0; font-family: Georgia, serif; font-size: 32px; font-weight: 400; }
+.intro { font-size: 12px; margin: 10px 0 0; }
+.stage { margin: 24px 0 16px; height: 150px; display: grid; place-items: center; border-radius: 24px; background: #eee5d8; }
+#cat { display: block; width: 88px; height: 88px; }
+#caption { min-height: 36px; margin: 0 0 16px; font-size: 13px; line-height: 1.5; }
+.poses { display: flex; gap: 8px; }
+button { flex: 1; min-height: 42px; border: 1px solid #c3b09e; border-radius: 12px; background: transparent; color: inherit; font: inherit; font-size: 12px; cursor: pointer; }
+button:hover { background: #eee5d8; }
+button[aria-pressed="true"] { color: #fffaf2; background: #674c3b; border-color: #674c3b; }
+button:focus-visible { outline: 3px solid #225c88; outline-offset: 3px; }
+.footnote { margin: 18px 0 0; color: #756154; font-size: 10px; }
+@media (prefers-reduced-motion: no-preference) {
+  #cat.react { animation: greet 320ms ease-out; }
+  @keyframes greet { 50% { transform: translateY(-3px) rotate(-3deg); } }
+}
+@media (forced-colors: active) {
+  button[aria-pressed="true"] { border: 3px solid Highlight; }
+}

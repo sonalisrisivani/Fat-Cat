@@ -1,28 +1,23 @@
 # Project status
 
-Updated: 2026-10-11
-Phase: workspace setup; extension implementation not started.
-Current sprint: [001 — Foundation](docs/sprints/001-foundation.md)
+Updated: 2026-10-23
+Phase: preserved historical prototype checkpoint.
+Branch: `codex/character-prototype`
 
-## Completed
-- Product and architecture baseline captured from the planning conversation.
-- Agent workflow, source boundaries, tracking, and Git conventions written.
-- Placeholder source/assets/test directories created.
-- DEV-001: scaffold validated and committed in `369f2a4`; foundation sprint complete.
+## Preserved work
+- Original three-pose, permission-free MV3 popup.
+- Source/tooling/tests remain as developed in this chat; current integrated extension lives on `main`.
+- User explicitly requested all branch code and existing commits be retained on GitHub.
+- Existing foundation commits remain ancestors; this checkpoint records previously uncommitted work today, not fabricated intermediate history.
 
-## In progress
-- None. Ready for the next user-scoped implementation task.
-
-## Pending
-- DEV-002: build/tooling setup, after implementation authorization.
-- CAT-001 onward: character prototype and extension features (see tracking).
+## Validation
+- `npm test`: strict build and 3 tests passed on 2026-10-23.
+- `git diff --check` passed. No independent review.
+- Generated dist, dependencies, local scratch, and secrets remain excluded from Git.
 
 ## Next action
-When implementation is authorized, scope DEV-002 and CAT-001 into Sprint 002; first validate the minimal build/test setup, then prototype three cat poses. Read the architecture and PRD only for those items.
+Push this branch to sonalisrisivani/Fat-Cat and verify the remote tip. Use main for ongoing extension/release work; this branch preserves the earlier implementation.
 
-## Blockers and verification
-- No technical blocker known; no remote configured.
-- No runnable code exists, so build, unit, and browser tests are not applicable.
-- Passed: all 10 Markdown files' relative links, final newlines, STATUS length, source placeholders, ignore rules, and staged whitespace checks.
-- Working tree verified clean after foundation commit; this handoff update is recorded in the following documentation commit. No incomplete implementation work.
-- No independent review yet.
+## Attribution
+- Agent: A1 (Codex / GPT-6; exact variant unavailable), self-review only.
+- Commit/push explicitly authorized by the user on 2026-10-23.

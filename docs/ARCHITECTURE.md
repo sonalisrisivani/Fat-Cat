@@ -1,6 +1,6 @@
 # Architecture and decisions
 
-Status: planned, not implemented. Performance numbers are targets, not measurements.
+Status: DEV-002 / CAT-001 implemented as a permission-free popup prototype. The companion components below remain planned. Performance numbers are targets unless explicitly measured.
 
 ## Components
 | Location | Responsibility |
@@ -33,7 +33,19 @@ ZIP <500 KB; unpacked <1 MB; character assets <100 KB; content JS/CSS <75 KB min
 | D-004 / 2026-10-11 | Shared event-driven reminder coordinator | Avoid multi-tab duplication and worker keepalive. |
 | D-005 / 2026-10-11 | Markdown tracking plus Git, no PM service | Fast handoff with minimal duplicated context; split only when files become hard to scan. |
 
+## Implemented feasibility slice
+- Node >=22; exact development dependencies and transitive resolutions in package-lock.json. TypeScript checks strict boundaries; esbuild bundles local JS/CSS; SVGO optimizes build copies. Node's built-in test runner checks artifacts, budgets, and pose validation. No runtime dependencies.
+- `src/manifest.json` declares only an MV3 action popup. No worker, storage, content script, host access, or permissions yet. The permission list above describes future companion scope.
+- Popup events select validated static pose metadata; the renderer updates an external SVG image, accessible description, caption, and pressed states. No persistence or autonomous behavior timer. A short CSS pet reaction is disabled for reduced motion and removed when the document becomes hidden.
+- `npm run preview` is a development-only loopback static server with an allowlist and local-only CSP; it is excluded from dist.
+- Measured: 2,648 bytes of optimized SVG; 12/11/16 SVG elements; 6,197-byte unpacked prototype. These do not establish future content-script heap/CPU budgets.
+
+| ID / date | Decision | Reason / revisit trigger |
+| --- | --- | --- |
+| D-006 / 2026-10-12 | Validate CAT-001 in a permission-free MV3 popup first | Review original poses at 88 px before adding origin access or injection in EXT-001. |
+
 ## Primary references (checked during product planning)
+- Build APIs checked during DEV-002: [esbuild](https://esbuild.github.io/api/), [SVGO](https://svgo.dev/docs/usage/node/), [MV3 popup](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world).
 - [Permissions](https://developer.chrome.com/docs/extensions/reference/api/permissions)
 - [Scripting and teardown](https://developer.chrome.com/docs/extensions/reference/api/scripting)
 - [Worker lifecycle](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/lifecycle)

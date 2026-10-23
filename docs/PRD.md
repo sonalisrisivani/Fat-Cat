@@ -31,4 +31,4 @@ Backend, accounts, AI chat, telemetry SDK, notifications, page analysis, cloud s
 ## Validation
 Start with 20–40 consenting beta testers. Assess activation, voluntary 7/28-day continued use, annoyance, and reliability through interviews/surveys and available store aggregates. No precise population retention claims without measurement. Prioritize unobtrusiveness over click counts.
 
-Baseline approved for planning by the user; implementation remains separately scoped.
+Baseline approved for planning by the user. DEV-002 / CAT-001 implementation authorized on 2026-10-12; the current deliverable is a permission-free popup feasibility prototype, not the page companion.

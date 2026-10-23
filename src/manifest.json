@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Fat Cat — Character Preview",
+  "version": "0.1.0",
+  "description": "Meet a quiet, sleepy companion. An original character prototype.",
+  "action": {
+    "default_title": "Meet Fat Cat",
+    "default_popup": "popup/index.html"
+  }
+}

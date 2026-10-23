@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet Fat Cat</title>
+    <link rel="stylesheet" href="popup.css">
+    <script type="module" src="popup.js"></script>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">A LITTLE COMPANY</p>
+      <h1>Meet Fat Cat.</h1>
+      <p class="intro">Big nap energy. Very small ambitions.</p>
+      <div class="stage">
+        <img id="cat" src="../assets/cat/sleep.svg" width="88" height="88" alt="A round ginger cat curled up asleep">
+      </div>
+      <p id="caption" aria-live="polite">Resting is a full-time job.</p>
+      <div class="poses" role="group" aria-label="Choose a cat pose">
+        <button type="button" data-pose="sleep" aria-pressed="true">Sleep</button>
+        <button type="button" data-pose="stretch" aria-pressed="false">Stretch</button>
+        <button type="button" data-pose="pet" aria-pressed="false">Pet</button>
+      </div>
+      <p class="footnote">A little hello, at actual size.</p>
+    </main>
+  </body>
+</html>

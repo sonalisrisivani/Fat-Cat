@@ -7,7 +7,7 @@
 4. Check the feature/bug row in `docs/TRACKING.md`. Do not reread all docs by default.
 
 ## Current boundary
-This is a documentation and directory scaffold. Do not implement extension features until the user authorizes implementation. No build toolchain or runnable extension exists yet.
+DEV-002 and CAT-001 are implemented: a minimal build/test toolchain and a permission-free character preview popup. The user authorized this feasibility slice on 2026-10-12. Scope further extension features through the tracking and sprint workflow before implementation; do not silently add permissions or page injection.
 
 ## Product and engineering rules
 - Keep the companion quiet, local-first, accessible, and easy to hide.
