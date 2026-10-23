@@ -7,8 +7,8 @@ Agent key: A1 = Codex / GPT-6 (exact variant unavailable). U = user. `—` = non
 | ID | Item | State | Proposed | Implemented | Reviewed | Modified | Commits |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | DEV-001 | Development workspace | done | U + A1 | A1 | A1 self-review; no independent review | A1 (verified handoff) | `369f2a4`; handoff commit discoverable by Feature trailer |
-| DEV-002 | Build and test toolchain | planned | A1 | — | — | — | — |
-| CAT-001 | Character feasibility prototype | planned | U + A1 | — | — | — | — |
+| DEV-002 | Minimal strict TypeScript prototype tooling | done | A1 | A1 | A1 self-review; build + tests | A1 | preservation checkpoint; see Feature trailers |
+| CAT-001 | Original six-motion SVG/JSON browser prototype | done | U + A1 | A1 | A1 self-review; browser checks | A1 (arrogant/caring refinement) | preservation checkpoint; see Feature trailers |
 | EXT-001 | Permissions and injection lifecycle | planned | A1 | — | — | — | — |
 | CAT-002 | Character behavior and animations | planned | U + A1 | — | — | — | — |
 | UX-001 | Drag, visibility, accessibility | planned | U + A1 | — | — | — | — |

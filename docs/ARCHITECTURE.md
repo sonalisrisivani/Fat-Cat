@@ -1,6 +1,6 @@
 # Architecture and decisions
 
-Status: planned, not implemented. Performance numbers are targets, not measurements.
+Status: standalone character prototype implemented; extension components remain planned. Budgets below remain targets; prototype byte/node measurements are recorded in the character README.
 
 ## Components
 | Location | Responsibility |
@@ -31,6 +31,8 @@ ZIP <500 KB; unpacked <1 MB; character assets <100 KB; content JS/CSS <75 KB min
 | D-002 / 2026-10-11 | Authored SVG poses with CSS/Web Animations; build-time SVGO | Small, recolorable artwork. Prototype complex motions; allow a measured spritesheet exception. No Lottie/Canvas engine initially. |
 | D-003 / 2026-10-11 | Optional origin permissions; local-only state | Earn trust and minimize access. Never add permissions silently. |
 | D-004 / 2026-10-11 | Shared event-driven reminder coordinator | Avoid multi-tab duplication and worker keepalive. |
+| D-006 / 2026-10-17 | CAT-001: shared SVG + validated JSON transforms/opacity + native Web Animations, no Lottie player; TypeScript-only preview build | Six simple motions need no general animation engine. No runtime dependencies or frame loop. See [comparison and measurements](../assets/cat/README.md). Revisit rich designer export/morphing needs. |
+| D-007 / 2026-10-17 | DEV-002: tsc plus small Node build/loopback static server and node:test | Sufficient for standalone modules; esbuild/SVGO deferred until extension packaging. Local preview adds no Chrome permissions or backend. |
 | D-005 / 2026-10-11 | Markdown tracking plus Git, no PM service | Fast handoff with minimal duplicated context; split only when files become hard to scan. |
 
 ## Primary references (checked during product planning)

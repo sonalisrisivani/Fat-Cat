@@ -7,7 +7,7 @@
 4. Check the feature/bug row in `docs/TRACKING.md`. Do not reread all docs by default.
 
 ## Current boundary
-This is a documentation and directory scaffold. Do not implement extension features until the user authorizes implementation. No build toolchain or runnable extension exists yet.
+A standalone character preview and minimal TypeScript toolchain were authorized on 2026-10-17. No runnable extension exists yet. Keep extension integration separately scoped; do not add extension features until the user authorizes them.
 
 ## Product and engineering rules
 - Keep the companion quiet, local-first, accessible, and easy to hide.

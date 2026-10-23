@@ -3,12 +3,12 @@
 Goal: users voluntarily keep and enjoy a quiet virtual companion. Monetization and engagement pressure are out of scope.
 
 ## Character
-Original chubby cat: sleepy, slightly sarcastic, secretly affectionate. Humor targets its laziness, never the user's health, productivity, or absence. No care obligations or punishment.
+Original chubby cat: lazy and arrogantly self-assured, but quietly caring. Half-lidded eyes, one raised brow, and an asymmetric smirk convey superiority without anger; petting reveals a happy, affectionate expression. Caring comes through companionship and gentle invitations to rest, never scolding. Humor targets its laziness, never the user's health, productivity, or absence. No care obligations or punishment.
 
 ## Launch scope and acceptance
 | ID | Requirement / acceptance |
 | --- | --- |
-| CAT-001 | Original SVG prototype: sleep, stretch, pet reaction remain expressive around 88 CSS px. |
+| CAT-001 | Original orange SVG/JSON prototype: idle breathing/blink/tail, curled sleep, tiny waddling walk, wool play, click-to-pet, and stretch; recognizable at 88 CSS px. Standalone browser preview includes pause/hide and reduced motion before integration. |
 | EXT-001 | User can try on one page, grant one origin, or opt into HTTP/HTTPS access; denial is graceful. |
 | CAT-002 | Sleep, blink/idle, local walk, stretch, pet, and drag states; hidden tabs stop behavior work. |
 | UX-001 | Drag/clamp/restore position; hide per site; pause globally; keyboard controls and reduced motion. |
@@ -31,4 +31,4 @@ Backend, accounts, AI chat, telemetry SDK, notifications, page analysis, cloud s
 ## Validation
 Start with 20–40 consenting beta testers. Assess activation, voluntary 7/28-day continued use, annoyance, and reliability through interviews/surveys and available store aggregates. No precise population retention claims without measurement. Prioritize unobtrusiveness over click counts.
 
-Baseline approved for planning by the user; implementation remains separately scoped.
+Baseline approved for planning. On 2026-10-17 the user authorized DEV-002/CAT-001 standalone tooling and six-motion character preview. Extension integration remains separately scoped.

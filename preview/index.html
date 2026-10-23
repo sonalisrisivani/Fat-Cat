@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e9">
+  <title>Marmalade — Fat Cat character studio</title>
+  <link rel="icon" href="./assets/cat/marmalade.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./preview/main.js"></script>
+</head>
+<body>
+  <header><a class="wordmark" href="./"><span class="brand-icon">꞊</span> fat cat<span class="brand-dot">●</span></a><span class="header-note">A LITTLE COMPANY. A LOT OF CAT.</span><span class="version">CHARACTER STUDY / 001</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow"><span></span> MEET YOUR DESKTOP COMPANION</p><h1>Marmalade<span>.</span></h1><p class="lede">Built for doing very little.<br>Exceptionally good at being here.</p></div><p class="intro-note">A little superior. Secretly devoted.<br>Your self-appointed supervisor.</p></section>
+    <section class="studio" aria-label="Character preview">
+      <div class="stage" id="stage">
+        <div class="stage-top"><span class="live-label"><span id="activity-dot"></span><span id="activity">LIVE PREVIEW</span></span><span class="stage-number">01 — THE ART OF LOAFING</span></div>
+        <div class="character-space"><div class="halo"></div><span class="side-note">100% cat<br>0% urgency</span><button id="cat" class="cat-button" aria-label="Pet Marmalade" disabled></button><p id="hidden-note" hidden>Marmalade is taking a little time off.</p></div>
+        <div class="stage-caption"><p id="caption" aria-live="polite">Waking up Marmalade…</p><span>CLICK THE CAT TO GIVE A LITTLE LOVE</span></div>
+        <div class="stage-bottom"><span>ORIGINAL VECTOR CHARACTER</span><div><button id="pause" type="button" aria-pressed="false">Pause</button><button id="hide" type="button" aria-pressed="false">Hide cat</button></div></div>
+      </div>
+      <aside class="controls"><div class="section-title"><span>THE MOOD BOARD</span><span>06 STATES</span></div><h2>A full schedule.<br>Of absolutely nothing.</h2><div id="states" class="state-grid" role="group" aria-label="Animation state">
+        <button data-state="idle" aria-pressed="true"><span class="state-icon">◡</span><span>Idle<small>Quietly supervising</small></span></button>
+        <button data-state="sleeping" aria-pressed="false"><span class="state-icon sleep-icon">zᶻ</span><span>Sleeping<small>Deeply unavailable</small></span></button>
+        <button data-state="walking" aria-pressed="false"><span class="state-icon">⌁</span><span>Walking<small>Going nowhere</small></span></button>
+        <button data-state="playing" aria-pressed="false"><span class="state-icon">◎</span><span>Playing<small>A brief ambition</small></span></button>
+        <button data-state="petting" aria-pressed="false"><span class="state-icon">♡</span><span>Petting<small>You may continue</small></span></button>
+        <button data-state="stretching" aria-pressed="false"><span class="state-icon">↔</span><span>Stretching<small>Today's workout</small></span></button>
+      </div><div class="size-control"><div><label for="size">A little cat. Or a lot.</label><output id="size-value" for="size">320 px</output></div><input id="size" type="range" min="88" max="360" value="320" step="1"><div class="size-labels"><button id="actual-size" type="button">88 px · extension size</button><span>360 px · maximum loaf</span></div></div><label class="motion-control"><input id="reduced" type="checkbox"><span>Less motion, same personality<small id="motion-note">Keep the poses. Skip the wiggles.</small></span></label><p class="control-footnote">Pet and stretch return to idle when finished.<br>With less motion, poses stay still for inspection.</p></aside>
+    </section>
+    <section class="details" aria-label="Character details"><div><span class="detail-index">01 / PERSONALITY</span><h3>A big ego. A softer heart.</h3><p>One raised brow. A little smirk. A spot saved beside him.<br>Acts above it all. Stays because he cares.</p></div><div><span class="detail-index">02 / CRAFT</span><h3>One cat. Every little mood.</h3><p>Shared vector shapes and reusable JSON motions.<br>No video, spritesheets, or animation library.</p></div><div><span class="detail-index">03 / FOOTPRINT</span><h3>Light on everything but paws.</h3><p id="metrics">Measuring the loaf…</p><p>Local assets. No sound. No background wiggles.</p></div></section>
+  </main>
+  <footer><span>FAT CAT / CHARACTER LAB</span><span>A quiet companion for a noisy internet.</span><span>MADE TO TAKE UP VERY LITTLE SPACE. MOSTLY.</span></footer>
+</body>
+</html>
